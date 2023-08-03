@@ -1,9 +1,9 @@
 export default function Intro() {
 	return (
 		<>
-			<div className="container">
+			<div className="container min-w-[80vw]">
 				<div className="flex flex-col items-center gap-10">
-					<h1 className="text-center text-5xl mt-32 font-bold text-orange-700">
+					<h1 className="text-center text-5xl mt-32 font-bold text-orange-500">
 						شرکت پتروپالایش کاسپین شیمی پاسارگاد
 					</h1>
 					<p className="text-center text-3xl font-sans text-indigo-900">

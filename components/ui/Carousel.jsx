@@ -23,12 +23,12 @@ export default function CarouselComponent() {
 				</button>
 			)}
 			autoplay={true}
-			autoplayInterval={20000}
+			autoplayInterval={2000}
 			wrapAround={true}
-			className="absolute"
+			className="relative"
 		>
 			<div className="min-h-[700px] h-screen w-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide1.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-56 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-56 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-gradient-to-r from-red-500/50 to-indigo-600/50  lg:pr-[25vw]">
 					<h1 className="text-white text-2xl min-[450px]:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						پتروپالایش کاسپین شیمی پاسارگاد
 					</h1>
@@ -42,8 +42,8 @@ export default function CarouselComponent() {
 					</Link>
 				</div>
 			</div>
-			<div className="w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide2.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
+			<div className="min-h-[700px] w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide2.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-gradient-to-r from-indigo-600/50 to-red-500/50 lg:pr-[25vw]">
 					<h1 className=" text-white text-2xl min-[450px]:text-4xl  sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						پتروپالایش کاسپین شیمی پاسارگاد
 					</h1>
@@ -57,8 +57,8 @@ export default function CarouselComponent() {
 					</Link>
 				</div>
 			</div>
-			<div className="w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide3.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
+			<div className="min-h-[700px] w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide3.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-gradient-to-r from-red-500/50 to-indigo-600/50 lg:pr-[25vw]">
 					<h1 className=" text-white text-2xl min-[450px]:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						پتروپالایش کاسپین شیمی پاسارگاد
 					</h1>
@@ -67,6 +67,21 @@ export default function CarouselComponent() {
 					</h3>
 					<Link href="#">
 						<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
+							بیشتر بدانید
+						</Button>
+					</Link>
+				</div>
+			</div>
+			<div className="min-h-[700px] h-screen w-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide4.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-56 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-gradient-to-r  from-indigo-600/50 to-red-500/50 lg:pr-[25vw]">
+					<h1 className="text-white text-2xl min-[450px]:text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
+						پتروپالایش کاسپین شیمی پاسارگاد
+					</h1>
+					<h3 className="text-white text-lg min-[450px]:text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+						پیشرو بودن رویا نیست، باور ماست
+					</h3>
+					<Link href="#">
+						<Button className="bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
 							بیشتر بدانید
 						</Button>
 					</Link>
