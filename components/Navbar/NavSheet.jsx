@@ -21,6 +21,8 @@ import Icon from "@/components/Navbar/Icon";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DirectionProvider } from "@radix-ui/react-direction";
 import NavSheetLink from "./NavSheetLink";
+import SeparatorClient from "@/components/Navbar/Seperator-client";
+import Link from "next/link";
 export default function NavSheet() {
   const icons = [[<FaLinkedinIn />,'/'], [<FaTelegramPlane />,'/'], [<BsInstagram />,'/']];
   const NavContent = [
@@ -65,9 +67,9 @@ export default function NavSheet() {
             <GiHamburgerMenu />
           </div>
         </SheetTrigger>
-        <SheetContent className=" sm:max-w-none w-full sm:w-[500px] p-0">
+        <SheetContent className=" sm:max-w-none w-full sm:w-[500px] p-0 overflow-scroll">
           <div className="w-full h-full flex-col justify-center items-center">
-            <div className="bg-blue-700 h-2/6 flex justify-between items-center px-8">
+            <div className="bg-blue-700 h-2/6 flex justify-between items-center px-8 min-h-[200px]">
               <div className="flex flex-col items-center justify-between">
                 <Image
                   src={logo}
@@ -84,14 +86,13 @@ export default function NavSheet() {
                 />
               </div>
               <div className="flex flex-col items-center justify-center gap-3 text-white ">
+              <Icon  children={'EN'} href={'/en'} />
                 {icons.map((icon, index) => (
                   <Icon key={index} children={icon[0]} href={icon[1]} />
                 ))}
               </div>
-              
             </div>
-            <div className="flex flex-col gap-2 px-6 mt-4">
-
+            <div className="flex flex-col gap-2 px-6 my-4 min-h-[400px]">
             {
               NavContent.map((content, index) => (
                 <NavSheetLink key={index} head={content.head} href={content.href} content={content.subLinks}/>)

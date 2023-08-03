@@ -1,26 +1,26 @@
 import Link from "next/link";
 
-export default function MenuLink({ head, href ,content}) {
-
+export default function MenuLink({ head, href, content, hoverFunc, setData }) {
   return (
-    <div className="group">
-
+    <div
+      className="group"
+      onMouseEnter={() => {
+        if (content != "none") {
+          hoverFunc(true);
+          setData(content);
+        }else{
+          hoverFunc(false);
+        }
+      }}
+      // onMouseLeave={() => hoverFunc(false)}
+    >
       <Link
-        href={href == 'none' ? '' : href}
-        className="p-1 px-2 rounded-2xl bg-white bg-opacity-0 hover:bg-opacity-70 text-white hover:text-orange-600"
-        >
+        href={href == "none" ? "" : href}
+        className="p-1 px-2 rounded-lg bg-white bg-opacity-0 hover:bg-opacity-30 text-white hover:text-orange-500"
+      >
         {head}
       </Link>
-      {
-        content == 'none' ? '' :
-        <div className="hidden bg-white top-[135px] absolute z-10 rounded-lg group-hover:block hover:block hover:transition ease-in-out delay-150">
-          {content.map((subLinks, index) => (
-            <div className="p-4">
-            <Link href={subLinks.href} key={index} >{subLinks.head}</Link>
-            </div>
-          ))}
-        </div>
-      }
-          </div>
+   
+    </div>
   );
 }
