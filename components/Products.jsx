@@ -22,7 +22,7 @@ export default function Products() {
 			<div className="container min-w-[50vw]">
 				<div className="flex mt-48 justify-center flex-wrap-reverse gap-12 bg-no-repeat bg-cover rounded-xl shadow-2xl p-10">
 					<div className="flex flex-col justify-between items-center text-center w-[48%] max-[1400px]:w-[100%]">
-						<h1 className="text-6xl text-orange-500">روغن</h1>
+						<h1 className="text-5xl md:text-6xl text-orange-500">روغن</h1>
 						<p className="text-3xl py-10 leading-loose">
 							{" "}
 							روغن موتور مایعی است که وظیفه دارد اصطکاک و سایش بین قطعات موتور
@@ -31,7 +31,7 @@ export default function Products() {
 						<Link href="#" className="py-2">
 							<Button
 								variant="destructive"
-								className="bg-orange-500 text-3xl p-8 hover:bg-orange-400"
+								className="bg-orange-500 text-3xl p-10 hover:bg-orange-400"
 							>
 								ادامه مطلب
 							</Button>
@@ -50,7 +50,7 @@ export default function Products() {
 						/>
 					</div>
 					<div className="flex flex-col justify-between items-center text-center w-[48%] max-[1400px]:w-[100%]">
-						<h1 className="text-6xl text-indigo-700">هیدروکربن</h1>
+						<h1 className="text-5xl md:text-6xl text-indigo-700">هیدروکربن</h1>
 						<p className="text-3xl py-10 leading-loose">
 							{" "}
 							هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها، پلاستیک‌ها،
@@ -59,7 +59,7 @@ export default function Products() {
 						<Link href="#" className="py-2">
 							<Button
 								variant="destructive"
-								className="bg-indigo-700 text-3xl p-8 hover:bg-indigo-500"
+								className="bg-indigo-700 text-3xl p-10 hover:bg-indigo-500"
 							>
 								ادامه مطلب
 							</Button>
