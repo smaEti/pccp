@@ -6,12 +6,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { FaLinkedinIn, FaTelegramPlane } from "react-icons/fa";
 import { BsInstagram } from "react-icons/bs";
 import logo from "../../public/logo.png";
@@ -21,43 +15,9 @@ import Icon from "@/components/Navbar/Icon";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DirectionProvider } from "@radix-ui/react-direction";
 import NavSheetLink from "./NavSheetLink";
-import SeparatorClient from "@/components/Navbar/Seperator-client";
-import Link from "next/link";
-export default function NavSheet() {
+export default function NavSheet({content}) {
   const icons = [[<FaLinkedinIn />,'/'], [<FaTelegramPlane />,'/'], [<BsInstagram />,'/']];
-  const NavContent = [
-    { head: "صفحه اصلی", href: "/", subLinks: "none" },
-    {
-      head: "درباره ما",
-      href: "none",
-      subLinks: [
-        { head: "lol", href: "lol" },
-        { head: "doroste", href: "doroste" },
-      ],
-    },
-    {
-      head: "محصولات و فناوری",
-      href: "none",
-      subLinks: [
-        { head: "lol", href: "lol" },
-        { head: "doroste", href: "doroste" },
-      ],
-    },
-    {
-      head: "خلق ارزش",
-      href: "none",
-      subLinks: [
-        { head: "lol", href: "lol" },
-        { head: "doroste", href: "doroste" },
-      ],
-    },
-    {
-      head: "تامین کنندگان و مشتریان",
-      href: "none",
-      subLinks: [{ head: "lol", href: "lol" }],
-    },
-    { head: "ارتباط با ما", href: "/about-us", subLinks: "none" },
-  ];
+  
   return (
     <DirectionProvider dir="rtl">
       <Sheet>
@@ -94,8 +54,8 @@ export default function NavSheet() {
             </div>
             <div className="flex flex-col gap-2 px-6 my-4 min-h-[400px]">
             {
-              NavContent.map((content, index) => (
-                <NavSheetLink key={index} head={content.head} href={content.href} content={content.subLinks}/>)
+              content.map((item, index) => (
+                <NavSheetLink key={index} head={item.head} href={item.href} content={item.subLinks}/>)
                 )
               }
               </div>

@@ -1,54 +1,94 @@
 "use client";
 import NavSheet from "./NavSheet";
 import MenuLink from "./MenuLink";
-import { useEffect, useState } from "react";
 import { BiSearch } from "react-icons/bi";
 import Icon from "./Icon";
-import Link from "next/link";
 export default function NavMenu() {
-  const [isShown, setIsShown] = useState(false);
-  const [data, setData] = useState();
-  useEffect(() => {
-    console.log(data);
-  }, [isShown]);
   const NavContent = [
-    { head: "صفحه اصلی", href: "/", subLinks: "none" },
+    { head: "صفحه اصلی", href: "/", subLinks: "none", subLinks: "none" },
     {
       head: "درباره ما",
       href: "none",
       subLinks: [
-        { head: "درباره شرکت گوه", href: "lol" },
-        { head: "ریدم تو شرکت", href: "doroste" },
+        { head: "شرکت در یک نگاه", href: "lol", subLinks: "none" },
+        { head: "تاریخچه شرکت", href: "doroste", subLinks: "none" },
+        { head: "تاریخجه مدیریت", href: "doroste", subLinks: "none" },
+        { head: "منابع انسانی", href: "doroste", subLinks: "none" },
+        { head: "گواهینامه ها", href: "doroste", subLinks: "none" },
+        { head: "چشم انداز", href: "doroste", subLinks: "none" },
+        { head: "ماموریت و ارزش ها", href: "doroste", subLinks: "none" },
       ],
     },
     {
-      head: "محصولات و فناوری",
+      head: "فناوری",
       href: "none",
       subLinks: [
-        { head: "خیار", href: "lol" },
-        { head: "موز", href: "doroste" },
+        { head: "فناوری اطلاعات", href: "lol", subLinks: "none" },
+        { head: "کنترل کیفیت", href: "doroste", subLinks: "none" },
+      ],
+    },
+    {
+      head: "محصولات",
+      href: "none",
+      subLinks: [
+        { head: "بخش روغن", href: "lol", subLinks: "none" },
+        { head: "بخش هیدروکربن ها", href: "lol", subLinks: "none" },
       ],
     },
     {
       head: "خلق ارزش",
       href: "none",
       subLinks: [
-        { head: "ارزشی ندارد", href: "lol" },
-        { head: "doroste", href: "doroste" },
+        { head: "بهداشت شغلی", href: "lol", subLinks: "none" },
+        { head: "سلامتی محیط زیست", href: "doroste", subLinks: "none" },
+        { head: "ایمنی فردی", href: "doroste", subLinks: "none" },
+        { head: "HSE", href: "doroste", subLinks: "none" },
+        { head: "ایمنی فرآیندی", href: "doroste", subLinks: "none" },
+        { head: "ایمنی رفتار", href: "doroste", subLinks: "none" },
+        { head: "آموزش HSE", href: "doroste", subLinks: "none" },
+        { head: "مسئولیت اجتماعی", href: "doroste", subLinks: "none" },
+        {
+          head: "آتش نشانی و مدیریت بحران (مدیریت شرایط اضطراری)",
+          href: "doroste",
+          subLinks: "none",
+        },
       ],
     },
     {
       head: "تامین کنندگان و مشتریان",
       href: "none",
-      subLinks: [{ head: "ممد سوپلایر", href: "lol" }],
+      subLinks: [
+        {
+          head: "راهنمای خرید محصولات",
+          href: "none",
+          subLinks: [
+            ["فروش داخلی", "lol"],
+            ["فروش صادراتی", "doroste"],
+          ],
+        },
+        {
+          head: "خدمات مشتریان",
+          href: "none",
+          subLinks: [
+            ["فرم شکایت", "doroste"],
+            ["فرم رضایت", "doroste"],
+            ["فرم ارائه پیشنهادات", "doroste"],
+          ],
+        },
+        {
+          head: "تامین کنندگان",
+          href: "none",
+          subLinks: [
+            ["فرم پیش ثبت نام", "doroste"],
+            ["نحوه ورود به فهرست منابع", "doroste"],
+            ["فرم ارزیابی رضایت تامین کنندگان", "doroste"],
+          ],
+        },
+      ],
     },
     { head: "ارتباط با ما", href: "/about-us", subLinks: "none" },
   ];
-  const mountedStyle = { animation: "inAnimation 200ms ease-in" };
-  const unmountedStyle = {
-    animation: "outAnimation 200ms ease-out",
-    animationFillMode: "forwards"
-  };
+
   return (
     <>
       <div className="lg:flex relative max-w-full items-center justify-between lg:flex-none hidden ">
@@ -59,8 +99,6 @@ export default function NavMenu() {
               head={content.head}
               href={content.href}
               content={content.subLinks}
-              hoverFunc={setIsShown}
-              setData={setData}
             />
           ))}
         </div>
@@ -69,30 +107,9 @@ export default function NavMenu() {
           <Icon href={"/en"} children={"EN"} />
           <Icon href={"/search"} children={<BiSearch />} />
         </div>
-        {/* {isShown && ( */}
-          <div
-            className=" bg-white top-[38px] w-full p-8 absolute z-10 rounded-lg" style={isShown ? mountedStyle : unmountedStyle}
-            onMouseEnter={() => {
-              setIsShown(true);
-            }}
-            onMouseLeave={() => {
-              setIsShown(false);
-            }}
-          >
-            <div>
-              {data?.map((content, index) => (
-                <div>
-                  <Link key={index} href={content.href}>
-                    {content.head}
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        {/* )} */}
       </div>
 
-      <NavSheet />
+      <NavSheet content={NavContent} />
     </>
   );
 }
