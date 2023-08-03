@@ -1,9 +1,9 @@
-import Image from 'next/image'
-import CarouselComponent from '@/components/ui/Carousel'
+import Image from "next/image";
+import CarouselComponent from "@/components/ui/Carousel";
 export default function Home() {
-  return (
-   <>
-   <CarouselComponent/>
-   </>
-  )
+	return (
+		<div className="h-[5000px]">
+			<CarouselComponent />
+		</div>
+	);
 }

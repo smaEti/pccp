@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { MdNavigateNext, MdNavigateBefore } from "react-icons/md";
 import "@/app/globals.css";
 import { Button } from "@/components/ui/button";
+import Link from "next/link";
 export default function CarouselComponent() {
 	return (
 		<Carousel
@@ -26,43 +27,49 @@ export default function CarouselComponent() {
 			wrapAround={true}
 			className="absolute"
 		>
-			<div className="w-screen h-screen sm:h-[90vh] md:h-[85vh] lg:h-[80vh] bg-[url('../public/oilslide1.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col justify-center items-center lg:items-end gap-10 flex-wrap w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw] lg:pt-48">
-					<h1 className=" text-white text-3xl min-[450px]:text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
+			<div className="min-h-[700px] h-screen w-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide1.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-56 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
+					<h1 className="text-white text-3xl min-[450px]:text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						شرکت پلیمر آریا ساسول
 					</h1>
-					<h3 className=" text-white text-lg min-[450px]:text-xl sm:text-2xl md:text-3xl xl:text-4xl">
+					<h3 className="text-white text-lg min-[450px]:text-xl sm:text-2xl md:text-3xl xl:text-4xl">
 						پیشرو بودن رویا نیست، باور ماست
 					</h3>
-					<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
-						بیشتر بدانید
-					</Button>
+					<Link href="#">
+						<Button className="bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
+							بیشتر بدانید
+						</Button>
+					</Link>
 				</div>
 			</div>
-			<div className="w-screen h-screen sm:h-[90vh] md:h-[85vh] lg:h-[80vh] bg-[url('../public/oilslide2.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col justify-center items-center lg:items-end gap-10 flex-wrap w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw] lg:pt-48">
+			<div className="w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide2.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
 					<h1 className=" text-white text-3xl min-[450px]:text-5xl  sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						شرکت پلیمر آریا ساسول
 					</h1>
 					<h3 className=" text-white text-lg min-[450px]:text-xl sm:text-2xl md:text-3xl xl:text-4xl">
 						پیشرو بودن رویا نیست، باور ماست
 					</h3>
-					<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
-						بیشتر بدانید
-					</Button>
+					<Link href="#">
+						<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
+							بیشتر بدانید
+						</Button>
+					</Link>
 				</div>
 			</div>
-			<div className="w-screen h-screen sm:h-[90vh] md:h-[85vh] lg:h-[80vh] bg-[url('../public/oilslide3.jpg')] bg-no-repeat bg-cover">
-				<div className="flex flex-col justify-center items-center lg:items-end gap-10 flex-wrap w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw] lg:pt-48">
+			<div className="w-screen h-screen xl:h-[90vh] min-[1400px]:h-[85vh] min-[1600px]:h-[80vh] bg-[url('../public/oilslide3.jpg')] bg-no-repeat bg-cover">
+				<div className="flex flex-col pt-40 sm:pt-60 md:pt-[42vh] lg:pt-48 xl:justify-center items-center lg:items-end gap-10 w-full h-full bg-blue-600 bg-opacity-60 lg:pr-[25vw]">
 					<h1 className=" text-white text-3xl min-[450px]:text-5xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl 2xl:text-8xl font-bold">
 						شرکت پلیمر آریا ساسول
 					</h1>
 					<h3 className=" text-white text-lg min-[450px]:text-xl sm:text-2xl md:text-3xl xl:text-4xl">
 						پیشرو بودن رویا نیست، باور ماست
 					</h3>
-					<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
-						بیشتر بدانید
-					</Button>
+					<Link href="#">
+						<Button className=" bg-red-600 hover:text-orange-500 rounded-full w-40 h-16 text-2xl lg:w-56 lg:text-4xl">
+							بیشتر بدانید
+						</Button>
+					</Link>
 				</div>
 			</div>
 		</Carousel>
