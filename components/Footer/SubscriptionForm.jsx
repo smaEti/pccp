@@ -38,7 +38,7 @@ function SubscriptionForm() {
           <label className="sr-only" htmlFor="email">
             ایمیل
           </label>
-          <button className="absolute rounded-full bg-orange-600 p-2 m-1 text-sm text-white transition hover:bg-orange-500">
+          <button className="absolute rounded-full bg-orange-600/90 p-2 m-1 text-sm text-white transition hover:bg-orange-500/90">
             مشترک شدن
           </button>
           <input
@@ -52,7 +52,7 @@ function SubscriptionForm() {
           />
         </div>
         {errorMessage && (
-          <p className="text-red-600 mt-2">{errorMessage}</p>
+          <p className="text-red-600 mt-2 text-center">{errorMessage}</p>
         )}
       </form>
     </div>
