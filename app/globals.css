@@ -1,10 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;  
-
-body{
-    background-color: yellowgreen;
-}
 header{
     display: flex;
     align-items: center;
@@ -80,4 +76,14 @@ header .navbar ul li:hover > ul{
         color : black;
 
     }
+}
+.paging-dot {
+	width: 2rem;
+	height: 1rem;
+	margin-bottom:1vh;
+}
+.paging-dot > circle {
+    fill: white;
+	outline:none;
+	border:none;
 }
