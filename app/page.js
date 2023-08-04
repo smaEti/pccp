@@ -5,11 +5,11 @@ import Products from "@/components/Products";
 import Sustainability from "@/components/Sustainability";
 export default function Home() {
 	return (
-		<div className="h-[5000px]">
+		<div>
 			<CarouselComponent />
 			<Intro/>
 			<Products/>
-			{/* <Sustainability/> */} 
+			<Sustainability/> 
       {/* bug dare in bi pedar behraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad TODO: too gooshi scroll miad  */}
 		</div>
 	);

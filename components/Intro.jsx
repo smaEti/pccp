@@ -1,8 +1,8 @@
 export default function Intro() {
 	return (
-	  <div className="w-full h-screen flex items-center">
+	  <div className="w-full h-screen flex items-center mt-72 lg:mt-32">
 	  {/* container div */}
-	  <div className=" bg-orange-500 w-full relative flex justify-center shadow-sm shadow-gray-500">
+	  <div className=" bg-gradient-to-t from-indigo-600/90 from-10%  to-rose-600/90 to-100% w-full relative flex justify-center shadow-sm shadow-gray-500">
 		{/* wrapper */}
 		<div className="lg:flex justify-center xl:gap-5 lg:gap-1 py-28 px-12 lg:px-0">
 		  <div className="xl:w-[600px] lg:w-[500px] mb-8">

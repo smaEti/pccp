@@ -2,9 +2,69 @@ import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 import { Button } from "./ui/button";
 export default function Products() {
-	return (
-		<>
-			<div className="container min-w-[80vw]" dir="rtl">
+  return (
+    <>
+      <div className="lg:w-8/12 w-11/12 shadow-custom rounded-xl mx-auto p-4 lg:my-32 mt-96">
+        <h1 className="text-center md:text-6xl text-4xl font-semibold bg-gradient-to-r from-rose-500 to-indigo-500/90 bg-clip-text text-transparent py-4">
+          محصولات
+        </h1>
+        <div className=" py-8">
+          <div className="rounded-2xl border-2 hover:border-rose-600 border-transparent hover:shadow-xl hover:shadow-gray-500 p-2 flex md:flex-nowrap justify-center text-center flex-wrap-reverse gap-5 ">
+            <div className=" md:w-1/2 w-11/12">
+              <h1 className="text-4xl md:text-5xl text-rose-600">روغن</h1>
+              <p className="text-2xl md:3xl py-8 leading-loose text-gray-700">
+                {" "}
+                روغن موتور مایعی است که وظیفه دارد اصطکاک و سایش بین قطعات موتور
+                خودروی شما را از بین ببرد
+              </p>
+              <Link href="#" className="py-2 text-center md:px-6">
+                <Button
+                  variant="destructive"
+                  className="bg-rose-600 text-3xl p-10 hover:bg-rose-400 "
+                >
+                  ادامه مطلب
+                </Button>
+              </Link>
+            </div>
+            <div className=" md:w-1/2 w-11/12">
+              <img
+                src="oil.jpg"
+                alt="oil"
+                className="rounded-xl aspect-video w-full h-full"
+              />
+            </div>
+          </div>
+          <div className="mt-10 rounded-2xl border-2 hover:border-indigo-700 border-transparent hover:shadow-xl hover:shadow-gray-500 p-2 flex md:flex-nowrap flex-wrap justify-center text-center gap-5 ">
+            <div className=" md:w-1/2 w-11/12">
+              <img
+                src="hydrocarbon.jpg"
+				alt="hydrocarbon"
+                className="rounded-xl aspect-video w-full h-full"
+              />
+            </div>
+            <div className=" md:w-1/2 w-11/12">
+              <h1 className="text-4xl md:text-5xl text-indigo-700">هیدروکربن</h1>
+              <p className="text-2xl md:3xl py-8 leading-loose text-gray-700">
+			  هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها، پلاستیک‌ها،
+							و مواد شیمیایی صنعتی استفاده می‌شوند
+              </p>
+              <Link href="#" className="py-2 text-center md:px-6">
+                <Button
+                  variant="destructive"
+                  className="bg-indigo-700 text-3xl p-10 hover:bg-indigo-500 "
+                >
+                  ادامه مطلب
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+{
+  /* <div className="container min-w-[80vw]" dir="rtl">
 				<div className="mt-24">
 					<div className="flex flex-col items-start gap-10">
 						<h2 className="text-5xl text-orange-600 border-b-4 border-spacing-2 border-orange-600 font-serif">
@@ -66,7 +126,5 @@ export default function Products() {
 						</Link>
 					</div>
 				</div>
-			</div>
-		</>
-	);
+			</div> */
 }
