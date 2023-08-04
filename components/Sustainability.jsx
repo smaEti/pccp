@@ -52,17 +52,17 @@ export default function Sustainability() {
 						</div>
 					</div>
 					<div className="flex md:gap-24 gap-6 flex-wrap justify-center">
-						<TabsList className="px-20 md:py-28 py-10 w-72 gap-20 bg-transparent border-2 border-white rounded-2xl shadow-2xl shadow-black">
+						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 bg-transparent border-2 border-white rounded-2xl shadow-2xl shadow-black">
 							<TabsTrigger value="health" className="md:text-4xl text-2xl py-2 text-white">
 								سلامتی محیط زیست
 							</TabsTrigger>
 						</TabsList>
-						<TabsList className="px-20 md:py-28 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
+						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
 							<TabsTrigger value="safety" className="md:text-4xl text-2xl py-2 text-white">
 								ایمنی فرآیند
 							</TabsTrigger>
 						</TabsList>
-						<TabsList className="px-20 md:py-28 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
+						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
 							<TabsTrigger
 								value="innovation"
 								className="md:text-4xl text-2xl py-2 text-white"
@@ -70,7 +70,7 @@ export default function Sustainability() {
 								نوآوری
 							</TabsTrigger>
 						</TabsList>
-						<TabsList className="px-20 md:py-28 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
+						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
 							<TabsTrigger
 								value="responsibility"
 								className="md:text-4xl text-2xl py-2 text-white"
