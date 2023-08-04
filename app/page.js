@@ -11,7 +11,6 @@ export default function Home() {
 			<Intro/>
 			<Products/>
 			<Sustainability/> 
-      {/* bug dare in bi pedar behraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad TODO: too gooshi scroll miad  */}
 		</div>
 	);
 }
