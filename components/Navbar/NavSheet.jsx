@@ -34,7 +34,7 @@ export default function NavSheet({ content }) {
         </SheetTrigger>
         <SheetContent className=" sm:max-w-none w-full sm:w-[500px] p-0 overflow-scroll">
           <div className="w-full h-full flex-col justify-center items-center">
-            <div className="bg-blue-700 h-2/6 flex justify-between items-center px-8 min-h-[200px]">
+            <div className="bg-gradient-to-l from-blue-700/100 to-orange-700/100 h-2/6 flex justify-between items-center px-8 min-h-[200px]">
               <div className="flex flex-col items-center justify-between">
                 <Image
                   src={logo}

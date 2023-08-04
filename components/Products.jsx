@@ -4,9 +4,9 @@ import { Button } from "./ui/button";
 export default function Products() {
 	return (
 		<>
-			<div className="container min-w-[80vw]">
+			<div className="container min-w-[80vw]" dir="rtl">
 				<div className="mt-24">
-					<div className="flex flex-col items-end gap-10">
+					<div className="flex flex-col items-start gap-10">
 						<h2 className="text-5xl text-orange-600 border-b-4 border-spacing-2 border-orange-600 font-serif">
 							محصولات
 						</h2>
