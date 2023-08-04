@@ -22,21 +22,21 @@ function ContactLinks() {
       <div>
         <h3 className="text-lg mb-2 text-white">دسترسی سریع</h3>
         <ul>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">محصولات</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">راهنمای خرید</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">دریافت نظرات مشتریان</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">کارجویان</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">ارسال شکایت</a></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">محصولات</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">راهنمای خرید</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">دریافت نظرات مشتریان</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">کارجویان</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">ارسال شکایت</link></li>
         </ul>
       </div>
       <div>
         <h3 className="text-lg mb-2 text-white">دسترسی سریع</h3>
         <ul>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">محصولات</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">راهنمای خرید</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">دریافت نظرات مشتریان</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">کارجویان</a></li>
-          <li><a href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">ارسال شکایت</a></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">محصولات</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">راهنمای خرید</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">دریافت نظرات مشتریان</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">کارجویان</link></li>
+          <li><link href="#" className="text-gray-200/70 hover:text-gray-800 transition duration-300">ارسال شکایت</link></li>
         </ul>
       </div>
     </div>
