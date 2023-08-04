@@ -15,11 +15,11 @@ export default function RootLayout({ children }) {
   return (<>
     <html lang="fa" dir='rtl' className='overflow-x-hidden p-0 m-0'>
       <body className={inter.className}>
-        <Navbar/>
-      <main>
-        {children}
-      </main>
-      <Footer />
+        <Navbar />
+        <main>
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   </>

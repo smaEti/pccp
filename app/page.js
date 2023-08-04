@@ -8,9 +8,9 @@ export default function Home() {
 	return (
 		<div>
 			<CarouselComponent />
-			<Intro/>
-			<Products/>
-			<Sustainability/> 
+			<Intro />
+			<Products />
+			<Sustainability />
 		</div>
 	);
 }
