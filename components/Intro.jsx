@@ -1,18 +1,41 @@
 export default function Intro() {
 	return (
-		<>
-			<div className="container min-w-[80vw]">
-				<div className="flex flex-col items-center gap-10">
-					<h1 className="text-center text-5xl mt-32 font-bold text-orange-500">
-						شرکت پتروپالایش کاسپین شیمی پاسارگاد
-					</h1>
-					<p className="text-center text-3xl font-sans text-indigo-900">
-						شرکت پتروپالایش کاسپین شیمی پاسارگاد بعنوان یکی از بزرگترین واحد های
-						پتروشیمی در جهان، یکی از طرح های توسعه ای شرکت ملی صنایع پتروشیمی
-						ایران در سال 1379 در منطقه ویژه پتروشیمی پارس در عسلویه بوده است
-					</p>
-				</div>
+	  <div className="w-full h-screen flex items-center">
+	  {/* container div */}
+	  <div className=" bg-orange-600 w-full relative flex justify-center">
+		{/* wrapper */}
+		<div className="lg:flex justify-center xl:gap-5 lg:gap-1 container py-28">
+		  <div className="xl:w-[600px] lg:w-[500px] mb-8">
+			<h1 className="text-white text-xl font-semibold">درباره ما</h1>
+			<p className="text-slate-700">
+			  ما در شرکت پترو پالایش کاسپین شیمی پاسارگاد با استفاده از بهترین
+			  تجهیزات و رعایت جدید ترین موارد ایمنی بهترین خدمات را به مشتریان
+			  خود ارائه میدهیم.
+			</p>
+			<p className="text-slate-700">
+			  ما در شرکت پترو پالایش کاسپین شیمی پاسارگاد با استفاده از بهترین
+			  تجهیزات و رعایت جدید ترین موارد ایمنی بهترین خدمات را به مشتریان
+			  خود ارائه میدهیم.
+			</p>
+		  </div>
+		  <div className="xl:w-[600px] lg:w-[500px]">
+			<div className="xl:w-[600px] lg:w-[500px] sm:h-96 h-72 lg:absolute bg-orange-200 lg:top-[-170px] rounded-3xl z-[2]">
+			  {/* fake data start */}
+			  <div className="flex justify-center items-center w-full h-full">
+				<h1>CLIP</h1>
+			  </div>
+			  {/* fake data end  */}
 			</div>
-		</>
+		  </div>
+		</div>
+		<div className="absolute lg:w-1/2 sm:w-5/6 w-full h-40 bg-cyan-300 z-10 bottom-[-90px] p-7 rounded-3xl">
+		  {/* fake data start */}
+		  <div className="w-full h-full flex justify-center items-center">
+			DATA
+		  </div>
+		  {/* fake data end */}
+		</div>
+	  </div>
+	</div>
 	);
-}
+  }
