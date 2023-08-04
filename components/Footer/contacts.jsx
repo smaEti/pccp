@@ -8,9 +8,6 @@ const Contacts = () => {
                     برای خودش خوشحال بود و کص میگفت و میخندید. من عاشق لواط هستم. بیا تا برویم به بستر. تا بکنم ز مستر. مست و عیان و زیبا. راست میکنم برایت.
                 </p>
                 <div className="mt-6 flex justify-center sm:justify-center gap-4">
-                    <div>
-                        <img src='Logo_New_Color.png' alt="Example Image" className="h-20 w-20" />
-                    </div>
                     <a
                         className="text-gray-300 transition hover:text-gray-400/75"
                         href=""
