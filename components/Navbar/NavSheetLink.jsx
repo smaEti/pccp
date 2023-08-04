@@ -16,7 +16,7 @@ export default function NavSheetLink({ head, href, content }) {
       }
     });
   }
-  console.log(data);
+  // console.log(data);
   return (
     <>
       {content == "none" ? (

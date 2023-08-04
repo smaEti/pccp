@@ -15,15 +15,20 @@ import Icon from "@/components/Navbar/Icon";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DirectionProvider } from "@radix-ui/react-direction";
 import NavSheetLink from "./NavSheetLink";
-export default function NavSheet({content}) {
-  const icons = [[<FaLinkedinIn />,'/'], [<FaTelegramPlane />,'/'], [<BsInstagram />,'/']];
-  
+import Link from "next/link";
+export default function NavSheet({ content }) {
+  const icons = [
+    [<FaLinkedinIn />, "/"],
+    [<FaTelegramPlane />, "/"],
+    [<BsInstagram />, "/"],
+  ];
+
   return (
     <DirectionProvider dir="rtl">
       <Sheet>
-        <SheetTrigger>
+        <SheetTrigger aria-controls="radix-:R1mcq:">
           {" "}
-          <div className="lg:hidden absolute top-7 right-4 text-white text-2xl">
+          <div className="md:hidden absolute top-7 right-4 text-white text-2xl">
             <GiHamburgerMenu />
           </div>
         </SheetTrigger>
@@ -34,6 +39,7 @@ export default function NavSheet({content}) {
                 <Image
                   src={logo}
                   width={45}
+                  priority={true}
                   height={45}
                   alt="شرکت پترو پالایش کاسپین شیمی پاسارگاد"
                 />
@@ -41,24 +47,70 @@ export default function NavSheet({content}) {
                   src={logoText}
                   width={180}
                   height={70}
+                  priority={true}
                   className="pt-3"
                   alt="شرکت پترو پالایش کاسپین شیمی پاسارگاد"
                 />
               </div>
               <div className="flex flex-col items-center justify-center gap-3 text-white ">
-              <Icon  children={'EN'} href={'/en'} />
+                <Icon children={"EN"} href={"/en"} />
                 {icons.map((icon, index) => (
                   <Icon key={index} children={icon[0]} href={icon[1]} />
                 ))}
               </div>
             </div>
-            <div className="flex flex-col gap-2 px-6 my-4 min-h-[400px]">
-            {
-              content.map((item, index) => (
-                <NavSheetLink key={index} head={item.head} href={item.href} content={item.subLinks}/>)
-                )
-              }
-              </div>
+            <header>
+              <nav className="navbar">
+                <ul>
+                  <li>
+                    <Link href="">home</Link>
+                  </li>
+                  <li>
+                    <Link href="">ali +</Link>
+                    <ul>
+                      <li>
+                        <Link href="">posts</Link>
+                      </li>
+                      <li>
+                        <Link href="">lol +</Link>
+                        <ul>
+                          <li>
+                            <Link href="">html</Link>
+                          </li>
+                          <li>
+                            <Link href="">css</Link>
+                          </li>
+                          <li>
+                            <Link href="">js</Link>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="">behrad</Link>
+                  </li>
+                  <li>
+                    <Link href="">amin</Link>
+                  </li>
+
+                  <li>
+                    <Link href="">buddy +</Link>
+                    <ul>
+                      <li>
+                        <Link href="">clown</Link>
+                      </li>
+                      <li>
+                        <Link href="">deadInside</Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <Link href="">reza -</Link>
+                  </li>
+                </ul>
+              </nav>
+            </header>
           </div>
         </SheetContent>
       </Sheet>
