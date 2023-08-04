@@ -3,7 +3,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Portal } from "@radix-ui/react-portal";
 export default function Sustainability() {
 	return (
-		<div className="mt-32 bg-[url('../public/sustainability.jpg')] w-full min-h-[50vh] bg-no-repeat bg-cover mx-auto px-0">
+		<div className="mt-32 bg-[url('../public/sustainability.jpg')] bg-fixed w-full min-h-[50vh] bg-no-repeat bg-cover mx-auto px-0">
 			<div className="bg-gradient-to-r from-blue-600/75 to-green-600/25 h-full min-h-[50vh]">
 				<div className="pt-20 text-white flex flex-col items-center gap-20 text-center">
 					<h1 className="text-7xl font-serif font-bold">پایداری</h1>
@@ -44,7 +44,7 @@ export default function Sustainability() {
 							<div className="w-2/3 mx-auto">
 								<TabsContent
 									value="responsibility"
-									className="text-6xl text-white mb-60 leading-loose font-serif"
+									className="text-6xl text-white mb-40 leading-loose font-serif"
 								>
 									بنابراین شرکت پلیمر آریاساسول علاوه بر ایفای تعهدات و الزامات
 									قانونی محیط زیستی ، حمایت از آهوی جبیر در پارک ملی نایبند را

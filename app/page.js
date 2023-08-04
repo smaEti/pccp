@@ -9,7 +9,8 @@ export default function Home() {
 			<CarouselComponent />
 			<Intro/>
 			<Products/>
-			<Sustainability/>
+			{/* <Sustainability/> */} 
+      {/* bug dare in bi pedar behraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad TODO: too gooshi scroll miad  */}
 		</div>
 	);
 }
