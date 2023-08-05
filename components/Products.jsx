@@ -4,10 +4,15 @@ import { Button } from "./ui/button";
 export default function Products() {
   return (
     <>
-      <div className="lg:w-8/12 w-11/12 shadow-custom rounded-xl mx-auto p-4 lg:my-32 mt-96">
-        <h1 className="text-center md:text-6xl text-4xl font-semibold bg-gradient-to-r from-rose-500 to-indigo-500/90 bg-clip-text text-transparent py-4">
-          محصولات
-        </h1>
+      <div className="lg:w-8/12 mx-auto p-4 lg:my-32 mt-96">
+        {/* header start */}
+        <div class="inline-flex items-center justify-center w-full">
+          <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
+          <span class="absolute px-3 font-semibold text-5xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+            محصولات
+          </span>
+        </div>
+        {/* header end */}
         <div className=" py-8">
           <div className="rounded-2xl border-2 hover:border-rose-600 border-transparent hover:shadow-xl hover:shadow-gray-500 p-2 flex md:flex-nowrap justify-center text-center flex-wrap-reverse gap-5 ">
             <div className=" md:w-1/2 w-11/12">
@@ -38,15 +43,17 @@ export default function Products() {
             <div className=" md:w-1/2 w-11/12">
               <img
                 src="hydrocarbon.jpg"
-				alt="hydrocarbon"
+                alt="hydrocarbon"
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>
             <div className=" md:w-1/2 w-11/12">
-              <h1 className="text-4xl md:text-5xl text-indigo-700">هیدروکربن</h1>
+              <h1 className="text-4xl md:text-5xl text-indigo-700">
+                هیدروکربن
+              </h1>
               <p className="text-2xl md:3xl py-8 leading-loose text-gray-700">
-			  هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها، پلاستیک‌ها،
-							و مواد شیمیایی صنعتی استفاده می‌شوند
+                هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها،
+                پلاستیک‌ها، و مواد شیمیایی صنعتی استفاده می‌شوند
               </p>
               <Link href="#" className="py-2 text-center md:px-6">
                 <Button

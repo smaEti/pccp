@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavItems() {
     return (
         <nav className="navbar">
-            <ul>
+            <ul >
                 <li>
                     <Link href="">صفحه اصلی</Link>
                 </li>

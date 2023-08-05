@@ -8,8 +8,8 @@ export default function Home() {
 	return (
 		<div>
 			<CarouselComponent />
-			<Intro />
 			<Products />
+			<Intro />
 			<Sustainability />
 		</div>
 	);
