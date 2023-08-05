@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ReservedRights() {
   return (
     <div className="my-3 text-center text-gray-600">

@@ -9,7 +9,7 @@ export default function IconsAndLogo() {
   const icons = [[<FaLinkedinIn />,'/'], [<FaTelegramPlane />,'/'], [<BsInstagram />,'/']];
 
   return (
-    <div className="md:flex justify-between items-center">
+    <div className="min-[941px]:flex justify-between items-center">
       <Link href={'/'}>
         <ul className="flex items-center justify-center">
           <Image
@@ -29,7 +29,7 @@ export default function IconsAndLogo() {
           />
         </ul>
       </Link>
-      <ul className="hidden md:flex items-center justify-center gap-3 text-white">
+      <ul className="hidden min-[941px]:flex items-center justify-center gap-3 text-white">
         {icons.map((icon, index) => (
           <Icon key={index} children={icon[0]} href={icon[1]}/>
         ))}

@@ -8,10 +8,9 @@ export default function Home() {
 	return (
 		<div>
 			<CarouselComponent />
-			<Intro/>
-			<Products/>
-			<Sustainability/> 
-      {/* bug dare in bi pedar behraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaad TODO: too gooshi scroll miad  */}
+			<Intro />
+			<Products />
+			<Sustainability />
 		</div>
 	);
 }
