@@ -54,7 +54,7 @@ header .navbar ul li:focus-within > ul,
 header .navbar ul li:hover > ul{
     display: initial;
 }
-@media(max-width:768px){
+@media(max-width:941px){
     header .navbar ul li{
         width: 100%;
     }
