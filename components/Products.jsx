@@ -4,11 +4,11 @@ import { Button } from "./ui/button";
 export default function Products() {
   return (
     <>
-      <div className="lg:min-w-[80vw] mx-auto p-4 lg:my-32 mt-96">
+      <div className="lg:min-w-[80vw] mx-auto p-4 lg:my-32 mt-96 bg-slate-100/75">
         {/* header start */}
         <div class="inline-flex items-center justify-center w-full lg:mb-12">
           <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
-          <span class="absolute  px-3 font-semibold text-4xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          <span class="absolute  px-3 font-semibold text-4xl text-blue-700  -translate-x-1/2 bg-slate-100/75 left-1/2 dark:text-white dark:bg-gray-900">
             محصولات
           </span>
         </div>
@@ -22,7 +22,7 @@ export default function Products() {
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>
-            <div className="pb-4 relative h-full flex flex-col justify-start items-center gap-3 px-2">
+            <div className="pb-4 h-full flex flex-col justify-start items-center gap-3 px-2">
               <h1 className="text-3xl md:text-4xl text-orange-600">روغن</h1>
               <p className="text-2xl md:text-2xl py-6 leading-loose text-gray-500">
                 روغن موتور مایعی است که وظیفه دارد اصطکاک و سایش بین قطعات موتور
@@ -30,7 +30,7 @@ export default function Products() {
               </p>
               <Link
                 href="#"
-                className="py-2 text-center md:px-6 absolute bottom-1"
+                className="py-2 text-center md:px-6 "
               >
                 <Button
                   variant="destructive"
@@ -49,7 +49,7 @@ export default function Products() {
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>
-            <div className="pb-4 relative h-full flex flex-col justify-start items-center gap-3 px-2">
+            <div className="pb-4  h-full flex flex-col justify-start items-center gap-3 px-2">
               <h1 className="text-3xl md:text-4xl text-blue-700">
                 هیدروکربن
               </h1>
@@ -59,7 +59,7 @@ export default function Products() {
               </p>
               <Link
                 href="#"
-                className="py-2 text-center md:px-6 absolute bottom-1"
+                className="py-2 text-center md:px-6 "
               >
                 <Button
                   variant="destructive"

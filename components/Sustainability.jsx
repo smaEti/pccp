@@ -4,7 +4,7 @@ import { FaCanadianMapleLeaf } from "react-icons/fa";
 import { IoMdPeople } from "react-icons/io";
 export default function Sustainability() {
   return (
-    <div className="container mt-24 min-w-[80vw] flex flex-wrap justify-center items-center  mb-48">
+    <div className="container mt-16 min-w-[80vw] flex flex-wrap justify-center items-center  mb-48">
       <div class="inline-flex items-center justify-center w-full mb-32">
         <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl"  />
         <span class="absolute px-3 font-semibold text-5xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
