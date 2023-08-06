@@ -11,8 +11,8 @@ export default function Sustainability() {
           پایداری
         </span>
       </div>
-      <div className="min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300">
-        <div className="flex gap-2  text-blue-700">
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
           <MdHealthAndSafety className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
           <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
             سلامتی محیط
@@ -22,8 +22,8 @@ export default function Sustainability() {
           حفظ محیط زیست، اولویت کاسپین شیمی پاسارگاد
         </p>
       </div>
-      <div className="min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300">
-        <div className="flex gap-2  text-blue-700">
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
           <AiFillSafetyCertificate className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
           <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
             ایمنی فرآیند
@@ -33,8 +33,8 @@ export default function Sustainability() {
           استقرار سیستم مدیریت ایمنی فرآیند با رویکرد جامع
         </p>
       </div>
-      <div className="min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300">
-        <div className="flex gap-2  text-blue-700">
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
           <FaCanadianMapleLeaf className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
           <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
             نوآوری
@@ -44,8 +44,8 @@ export default function Sustainability() {
           آغاز به کار مرکز نوآوری کاسپین شیمی پاسارگاد
         </p>
       </div>
-      <div className="min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300">
-        <div className="flex gap-2  text-blue-700">
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
           <IoMdPeople className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
           <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
             مسئولیت اجتماعی
