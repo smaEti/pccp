@@ -4,17 +4,17 @@ import { Button } from "./ui/button";
 export default function Products() {
   return (
     <>
-      <div className="lg:min-w-[80vw] mx-auto p-4 lg:my-32 mt-96 bg-slate-100/75">
+      <div className="lg:min-w-[80vw] mx-auto p-4 lg:mt-32 mt-96 bg-slate-100/75">
         {/* header start */}
-        <div class="inline-flex items-center justify-center w-full lg:mb-12">
+        <div class="inline-flex items-center justify-center w-full lg:mb-12 pt-20">
           <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
           <span class="absolute  px-3 font-semibold text-4xl text-blue-700  -translate-x-1/2 bg-slate-100/75 left-1/2 dark:text-white dark:bg-gray-900">
             محصولات
           </span>
         </div>
         {/* header end */}
-        <div className=" py-8 flex  flex-wrap justify-center gap-10">
-          <div className="lg:w-1/4  rounded-2xl border-2 hover:border-orange-600 border-transparent hover:shadow-xl transition delay-150 duration-500 ease-in-out hover:shadow-gray-500 p-2 flex flex-col  justify-start text-center gap-5 ">
+        <div className=" py-8 flex  flex-wrap justify-center gap-10 mb-24">
+          <div className="lg:w-1/5 rounded-2xl border-2 hover:border-orange-600 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
             <div>
               <img
                 src="oil.jpg"
@@ -22,26 +22,21 @@ export default function Products() {
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>
-            <div className="pb-4 h-full flex flex-col justify-start items-center gap-3 px-2">
-              <h1 className="text-3xl md:text-4xl text-orange-600">روغن</h1>
-              <p className="text-2xl md:text-2xl py-6 leading-loose text-gray-500">
+            <div className="pb-4  h-full flex flex-col justify-start items-center gap-3 px-2">
+              <h1 className="text-3xl text-orange-600">روغن</h1>
+              <p className="text-xl py-6 leading-loose text-gray-500">
                 روغن موتور مایعی است که وظیفه دارد اصطکاک و سایش بین قطعات موتور
                 خودروی شما را از بین ببرد
               </p>
               <Link
                 href="#"
-                className="py-2 text-center md:px-6 "
+                className="rounded-xl text-white text-center px-6 bg-orange-600 text-xl py-4 hover:bg-orange-500 hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out"
               >
-                <Button
-                  variant="destructive"
-                  className="bg-orange-600 text-3xl p-10 hover:bg-orange-400 "
-                >
-                  ادامه مطلب
-                </Button>
+                ادامه مطلب
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/4 lg:min-h-[70vh] rounded-2xl border-2 hover:border-blue-700 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-150 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
+          <div className="lg:w-1/5 rounded-2xl border-2 hover:border-blue-700 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
             <div>
               <img
                 src="hydrocarbon.jpg"
@@ -50,23 +45,16 @@ export default function Products() {
               />
             </div>
             <div className="pb-4  h-full flex flex-col justify-start items-center gap-3 px-2">
-              <h1 className="text-3xl md:text-4xl text-blue-700">
-                هیدروکربن
-              </h1>
-              <p className="text-2xl md:text-2xl py-6 leading-loose text-gray-500">
+              <h1 className="text-3xl text-blue-700">هیدروکربن</h1>
+              <p className="text-xl  py-6 leading-loose text-gray-500">
                 هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها،
                 پلاستیک‌ها، و مواد شیمیایی صنعتی استفاده می‌شوند
               </p>
               <Link
                 href="#"
-                className="py-2 text-center md:px-6 "
+                className="rounded-xl text-white text-center px-6 bg-blue-600 text-xl py-4 hover:bg-blue-500 hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out"
               >
-                <Button
-                  variant="destructive"
-                  className="bg-blue-700 text-3xl p-10 hover:bg-blue-500 "
-                >
-                  ادامه مطلب
-                </Button>
+                ادامه مطلب
               </Link>
             </div>
           </div>
