@@ -14,8 +14,6 @@ import Image from "next/image";
 import Icon from "@/components/Navbar/Icon";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { DirectionProvider } from "@radix-ui/react-direction";
-import NavSheetLink from "./NavSheetLink";
-import Link from "next/link";
 import NavItems from "./NavItems";
 export default function NavSheet({ content }) {
   const icons = [

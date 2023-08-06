@@ -1,86 +1,60 @@
-"use client";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { Portal } from "@radix-ui/react-portal";
+import { MdHealthAndSafety } from "react-icons/md";
+import { AiFillSafetyCertificate } from "react-icons/ai";
+import { FaCanadianMapleLeaf } from "react-icons/fa";
+import { IoMdPeople } from "react-icons/io";
 export default function Sustainability() {
-	return (
-		<div className="mt-32 bg-[url('../public/sustainability.jpg')] w-full bg-no-repeat bg-cover bg-fixed">
-			<div className="bg-gradient-to-r from-blue-600/75 to-green-600/25">
-				<div className="pt-20 text-white flex flex-col items-center gap-20 text-center">
-					<h1 className="lg:text-6xl text-4xl md:text-5xl font-serif font-bold">پایداری</h1>
-				</div>
-				<Tabs
-					defaultValue="health"
-					className="text-center pb-20"
-				>
-					<div className="md:pt-24 pt-10 h-72	max-[450px]:h-[440px]">
-						<div className="w-2/3 mx-auto">
-							<TabsContent
-								value="health"
-								className="text-2xl md:text-3xl lg:text-4xl  text-white md:mb-32 mb-8 leading-loose font-serif"
-							>
-								شرکت پتروپالایش کاسپین شیمی پاسارگاد بارها موفق به کسب جایزه
-								صنعت سبز شده است
-							</TabsContent>
-						</div>
-						<div className="w-2/3 mx-auto">
-							<TabsContent
-								value="safety"
-								className="text-2xl md:text-3xl lg:text-4xl  text-white md:mb-32 mb-8 leading-loose font-serif"
-							>
-								کاسپین شیمی پاسارگاد با توجه به نقش مهم و حیاتی ایمنی فرآیند،
-								نسبت به استقرار سیستم مدیریت ایمنی فرآیند اقدام نموده است
-							</TabsContent>
-						</div>
-						<div className="w-2/3 mx-auto">
-							<TabsContent
-								value="innovation"
-								className="text-2xl md:text-3xl lg:text-4xl  text-white md:mb-32 mb-8 leading-loose font-serif"
-							>
-								مرکز نوآوری و دانش بنیان کاسپین شیمی پاسارگاد به‌ عنوان یک واحد
-								مستقل، فعالیت خود را شروع نموده است
-							</TabsContent>
-						</div>
-						<div className="w-2/3 mx-auto">
-							<TabsContent
-								value="responsibility"
-								className="text-2xl md:text-3xl lg:text-4xl  text-white md:mb-32 mb-8 leading-loose font-serif"
-							>
-								بنابراین شرکت پلیمر آریاساسول علاوه بر ایفای تعهدات و الزامات
-								قانونی محیط زیستی ، حمایت از آهوی جبیر در پارک ملی نایبند را از
-								سال های گذشته شروع کرده است
-							</TabsContent>
-						</div>
-					</div>
-					<div className="flex md:gap-24 gap-6 flex-wrap justify-center">
-						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 bg-transparent border-2 border-white rounded-2xl shadow-2xl shadow-black">
-							<TabsTrigger value="health" className="md:text-4xl text-2xl py-2 text-white">
-								سلامتی محیط زیست
-							</TabsTrigger>
-						</TabsList>
-						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
-							<TabsTrigger value="safety" className="md:text-4xl text-2xl py-2 text-white">
-								ایمنی فرآیند
-							</TabsTrigger>
-						</TabsList>
-						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
-							<TabsTrigger
-								value="innovation"
-								className="md:text-4xl text-2xl py-2 text-white"
-							>
-								نوآوری
-							</TabsTrigger>
-						</TabsList>
-						<TabsList className="px-20 md:py-16 py-10 w-72 gap-20 shadow-2xl shadow-black bg-transparent border-2 border-white rounded-2xl">
-							<TabsTrigger
-								value="responsibility"
-								className="md:text-4xl text-2xl py-2 text-white"
-							>
-								مسئولیت اجتماعی
-							</TabsTrigger>
-						</TabsList>
-					</div>
-				</Tabs>
-			</div>
-		</div>
-	);
+  return (
+    <div className="container mt-24 min-w-[80vw] flex flex-wrap justify-center items-center  mb-48">
+      <div class="inline-flex items-center justify-center w-full mb-32">
+        <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl"  />
+        <span class="absolute px-3 font-semibold text-5xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          پایداری
+        </span>
+      </div>
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
+          <MdHealthAndSafety className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
+          <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
+            سلامتی محیط
+          </h1>
+        </div>
+        <p className="text-md sm:text-xl md:text-2xl px-3 text-gray-700 max-w-[80%]">
+          حفظ محیط زیست، اولویت کاسپین شیمی پاسارگاد
+        </p>
+      </div>
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
+          <AiFillSafetyCertificate className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
+          <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
+            ایمنی فرآیند
+          </h1>
+        </div>
+        <p className="text-md sm:text-xl md:text-2xl px-3 text-gray-700 max-w-[80%]">
+          استقرار سیستم مدیریت ایمنی فرآیند با رویکرد جامع
+        </p>
+      </div>
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
+          <FaCanadianMapleLeaf className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
+          <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
+            نوآوری
+          </h1>
+        </div>
+        <p className="text-md sm:text-xl md:text-2xl px-3 text-gray-700 max-w-[80%]">
+          آغاز به کار مرکز نوآوری کاسپین شیمی پاسارگاد
+        </p>
+      </div>
+      <div className="hover:cursor-default min-w-[100%] min-[1400px]:basis-0 lg:min-w-[25%] lg:max-w-[50%] min-[1920px]:min-w-[25%] min-[1920px]:max-w-[25%] flex flex-col gap-4 justify-center p-10 hover:shadow-borderLike rounded-2xl min-h-[15vh] transition ease-in-out duration-300 delay-150">
+        <div className="flex gap-2  text-orange-600">
+          <IoMdPeople className="mt-1 text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl" />
+          <h1 className="font-serif text-xl sm:text-2xl md:text-3xl min-[1920px]:text-4xl">
+            مسئولیت اجتماعی
+          </h1>
+        </div>
+        <p className="text-md sm:text-xl md:text-2xl px-3 text-gray-700 max-w-[80%]">
+          حمایت از محیط زیست، مصداق مسئولیت پذیری اجتماعی
+        </p>
+      </div>
+    </div>
+  );
 }
