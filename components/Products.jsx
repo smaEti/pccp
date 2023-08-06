@@ -8,7 +8,7 @@ export default function Products() {
         {/* header start */}
         <div class="inline-flex items-center justify-center w-full lg:mb-12">
           <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
-          <span class="absolute  px-3 font-semibold text-5xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          <span class="absolute  px-3 font-semibold text-4xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
             محصولات
           </span>
         </div>
@@ -23,8 +23,8 @@ export default function Products() {
               />
             </div>
             <div className="pb-4 relative h-full flex flex-col justify-start items-center gap-3 px-2">
-              <h1 className="text-4xl md:text-5xl text-orange-600">روغن</h1>
-              <p className="text-2xl md:3xl py-6 leading-loose text-gray-700">
+              <h1 className="text-3xl md:text-4xl text-orange-600">روغن</h1>
+              <p className="text-2xl md:text-2xl py-6 leading-loose text-gray-500">
                 روغن موتور مایعی است که وظیفه دارد اصطکاک و سایش بین قطعات موتور
                 خودروی شما را از بین ببرد
               </p>
@@ -50,10 +50,10 @@ export default function Products() {
               />
             </div>
             <div className="pb-4 relative h-full flex flex-col justify-start items-center gap-3 px-2">
-              <h1 className="text-4xl md:text-5xl text-blue-700">
+              <h1 className="text-3xl md:text-4xl text-blue-700">
                 هیدروکربن
               </h1>
-              <p className="text-2xl md:3xl py-6 leading-loose text-gray-700">
+              <p className="text-2xl md:text-2xl py-6 leading-loose text-gray-500">
                 هیدروکربن‌ها برای تولید الیاف‌ها، حلال‌ها، لاستیک‌ها،
                 پلاستیک‌ها، و مواد شیمیایی صنعتی استفاده می‌شوند
               </p>

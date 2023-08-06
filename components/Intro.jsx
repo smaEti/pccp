@@ -1,44 +1,17 @@
+
 export default function Intro() {
   return (
-    <div className="w-full h-[55vh] lg:my-[300px] flex items-center bg-[url('../public/oilslide1.jpg')] bg-no-repeat bg-cover bg-fixed">
-      <div className="w-full h-full bg-black bg-opacity-40">
-
-        {/* container div */}
-        <div className=" bg-gradient-to-b from-orange-600/75 from-10%  to-white/75 to-100% w-full h-full relative flex justify-center shadow-sm shadow-gray-500 z-10">
-          {/* wrapper */}
-          <div className="lg:flex justify-center xl:gap-5 lg:gap-1 py-28 px-12 lg:px-0">
-            <div className="xl:w-[600px] lg:w-[500px] mb-8 flex flex-col gap-8">
-              <h1 className="text-white text-3xl font-semibold">درباره ما</h1>
-              <p className="text-xl text-white">
-                ما در شرکت پترو پالایش کاسپین شیمی پاسارگاد با استفاده از بهترین
-                تجهیزات و رعایت جدید ترین موارد ایمنی بهترین خدمات را به مشتریان
-                خود ارائه میدهیم.
-              </p>
-              <p className="text-xl text-white">
-                ما در شرکت پترو پالایش کاسپین شیمی پاسارگاد با استفاده از بهترین
-                تجهیزات و رعایت جدید ترین موارد ایمنی بهترین خدمات را به مشتریان
-                خود ارائه میدهیم.
-              </p>
-            </div>
-            <div className="xl:w-[600px] lg:w-[500px]">
-              <div className="xl:w-[600px] lg:w-[500px] sm:h-96 h-72 lg:absolute bg-orange-200 lg:top-[-170px] rounded-3xl z-[2] shadow-lg shadow-slate-700">
-                {/* fake data start */}
-                <div className="flex justify-center items-center w-full h-full">
-                  <h1>CLIP</h1>
-                </div>
-                {/* fake data end  */}
-              </div>
-            </div>
-          </div>
-          <div className="absolute lg:w-1/2 sm:w-5/6 w-full h-40 z-10 bottom-[-90px] p-7 rounded-3xl shadow-lg shadow-gray-500 bg-white">
-            {/* fake data start */}
-            <div className="w-full h-full flex justify-center items-center">
-              DATA
-            </div>
-            {/* fake data end */}
-          </div>
-        </div>
-        </div>
-    </div>
+    <section className="lg:max-w-[80vw] mx-auto flex flex-col justify-center items-center mt-32 mb-36">
+      <div class="inline-flex items-center justify-center w-full lg:mb-12">
+        <hr class="xl:w-[50vw] w-[80vw] h-[3px] mt-10 mb-16 xl:my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
+        <span class="absolute text-center px-3 font-semibold text-4xl text-blue-700  -translate-x-1/2 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+          شعار شرکت پتروپالایش کاسپین شیمی پاسارگاد
+        </span>
+      </div>
+      <div className="max-w-[60vw] min-h-[50vh] flex shadow-custom mt-14">
+        <div className="lg:w-1/2"><img src="/oilslide2.jpg" className="h-full" alt="pccp" /></div>
+        <div className="lg:w-1/2">matn</div>
+      </div>
+    </section>
   );
 }
