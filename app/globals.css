@@ -1,97 +1,119 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;  
-html,body {
-    max-width: 100%;
-    overflow-x: hidden;
+@tailwind utilities;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
-header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 1000;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
 }
-header .navbar ul{
-    list-style: none;
+header .navbar ul {
+  list-style: none;
+}
+header .navbar ul li {
+  position: relative;
+  float: left;
+}
+header .navbar ul li a {
+  font-size: 20px;
+  padding: 13px;
+  color: white;
+  display: block;
 
-} 
-header .navbar ul li{
-    position: relative;
-    float: left;
-
-}
-header .navbar ul li a{
-    font-size: 20px;
-    padding:13px;
-    color : white;
-    display: block;
-}
-
-header .navbar ul li a:hover{
-    color:rgb(249 115 22);
 }
 
-header .navbar ul li ul{
-    border-radius:3px;
+header .navbar ul li a:hover {
+  color: rgb(249 115 22);
+
+}
+
+header .navbar ul li ul {
+  border-radius: 3px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.5s, opacity 0.5s ease-in-out;
+
+}
+header .navbar ul li ul a {
+  color: black;
+}
+header .navbar ul li ul li {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+header .navbar ul li ul li ul {
+  right: 200px;
+  top: 0;
+}
+header .navbar ul li:focus-within > ul,
+header .navbar ul li:hover > ul {
+  /* display: initial; */
+  visibility: visible;
+  opacity: 1;
+}
+@media (max-width: 940px) {
+  header .navbar ul li ul {
+    border-radius: 3px;
     position: absolute;
     right: 0;
     width: 200px;
     background-color: #fff;
     display: none;
-}
-header .navbar ul li ul a{
-    color : black;
-}
-header .navbar ul li ul li{
-    width: 100%;
-    border-top: 1px solid rgba(0,0,0,.1);
-}
-header .navbar ul li ul li ul{
-    right:200px;
-    top:0 ;
-}
-header .navbar ul li:focus-within > ul,
-header .navbar ul li:hover > ul{
+    opacity: 1;
+    visibility: visible;
+  }
+  header .navbar ul li:focus-within > ul,
+  header .navbar ul li:hover > ul {
     display: initial;
-}
-@media(max-width:940px){
-    header .navbar ul li{
-        width: 100%;
-    }
-    header .navbar ul li ul{
-        position : relative;
-        width: 100%;
-    }
-    header .navbar ul li ul li{
-        background-color: #eee;
-    }
-    header .navbar ul li ul li ul{
-        width: 100%;
-        right:0;
-    }
-    header .navbar ul li ul a{
-        color : black;
-    }
-    header .navbar ul li ul li{
-        width: 100%;
-        border-top: 1px solid rgba(0,0,0,.1);
-    }
-    header .navbar ul li a{
-        color : black;
 
-    }
+  }
+
+  header .navbar ul li {
+    width: 100%;
+  }
+  header .navbar ul li ul {
+    position: relative;
+    width: 100%;
+  }
+  header .navbar ul li ul li {
+    background-color: #eee;
+  }
+  header .navbar ul li ul li ul {
+    width: 100%;
+    right: 0;
+  }
+  header .navbar ul li ul a {
+    color: black;
+  }
+  header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  header .navbar ul li a {
+    color: black;
+  }
 }
 .paging-dot {
-	width: 2rem;
-	height: 1rem;
-	margin-bottom:1vh;
+  width: 2rem;
+  height: 1rem;
+  margin-bottom: 1vh;
 }
 .paging-dot > circle {
-    fill: white;
-	outline:none;
-	border:none;
+  fill: white;
+  outline: none;
+  border: none;
 }
 
 .image-clip {
-    clip-path: "inset(0 0 0 0)",
+  clip-path: "inset(0 0 0 0)";
 }
