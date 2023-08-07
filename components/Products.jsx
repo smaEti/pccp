@@ -1,6 +1,9 @@
 import Link from "next/link";
 import { BsArrowLeft } from "react-icons/bs";
 import { Button } from "./ui/button";
+import Image from "next/image";
+import oil from "@/public/oil.jpg";
+import hc from "@/public/hydrocarbon.jpg";
 export default function Products() {
   return (
     <>
@@ -13,12 +16,13 @@ export default function Products() {
           </span>
         </div>
         {/* header end */}
-        <div className=" py-8 flex  flex-wrap justify-center gap-10 mb-24">
-          <div className="lg:w-1/5 rounded-2xl border-2 hover:border-orange-600 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
+        <div className=" py-8 flex  flex-wrap justify-center gap-10 lg:gap-20 mb-24">
+          <div className="md:w-1/5 rounded-2xl border-2 hover:border-orange-600 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
             <div>
-              <img
-                src="oil.jpg"
+              <Image
+                src={oil}
                 alt="oil"
+                placeholder="blur"
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>
@@ -36,11 +40,12 @@ export default function Products() {
               </Link>
             </div>
           </div>
-          <div className="lg:w-1/5 rounded-2xl border-2 hover:border-blue-700 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
+          <div className="md:w-1/5 rounded-2xl border-2 hover:border-blue-700 border-transparent hover:shadow-xl hover:shadow-gray-500 transition delay-100 duration-500 ease-in-out p-2 flex flex-col justify-start text-center gap-5 ">
             <div>
-              <img
-                src="hydrocarbon.jpg"
+              <Image
+                src={hc}
                 alt="hydrocarbon"
+                placeholder="blur"
                 className="rounded-xl aspect-video w-full h-full"
               />
             </div>

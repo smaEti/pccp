@@ -91,3 +91,7 @@ header .navbar ul li:hover > ul{
 	outline:none;
 	border:none;
 }
+
+.image-clip {
+    clip-path: "inset(0 0 0 0)",
+}
