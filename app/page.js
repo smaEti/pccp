@@ -6,7 +6,7 @@ import News from "@/components/News/News";
 export default async function Home() {
   return (
     <>
-        <CarouselComponent />
+      <CarouselComponent />
       <News />
       <Products />
       <About />

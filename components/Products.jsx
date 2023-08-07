@@ -7,7 +7,7 @@ import hc from "@/public/hydrocarbon.jpg";
 export default function Products() {
   return (
     <>
-      <div className="lg:min-w-[80vw] mx-auto p-4 lg:mt-32 mt-96 bg-slate-100/75">
+      <div className="lg:min-w-[80vw] mx-auto p-4 lg:mt-32 mt-20 bg-slate-100/75">
         {/* header start */}
         <div class="inline-flex items-center justify-center w-full lg:mb-12 pt-20">
           <hr class="w-96 h-[3px] my-8 bg-gray-200 border-0 dark:bg-gray-800 text-2xl" />
